@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="http://localhost:3000/" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./process.js"></script>
+    <script src="./scripts_web3/web3.js"></script>
+    <title>Minigame</title>
+
+    <style>
+        #frmRegister, #userList {
+            background-color: antiquewhite;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #tableUserList {
+            width: 90%;
+
+        }
+        #row1 td, .row {
+            text-align: center;
+            padding: 4px;
+            border-bottom: solid 1px cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Minigame</h2>
+    <button id="btnConnectMetamask">Connect Metamask</button>
+    <div id="frmRegister">
+        <input type="text" id="txtName" placeholder="Name" />
+        <input type="text" id="txtEmail" placeholder="Email" />
+        <input type="text" id="txtPhonenumber" placeholder="Phonenumber" />
+        <button id="btnRegister">Register</button>
+    </div>
+    <div id="userList">
+        <table id="tableUserList">
+            <tr id="row1">
+                <td>Address</td>
+                <td>_ID</td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+
+</html>
